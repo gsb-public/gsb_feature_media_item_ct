@@ -5,3 +5,16 @@
  */
 
 include_once 'gsb_feature_media_item_ct.features.inc';
+
+/**
+ * Implements hook_node_presave().
+ */
+function gsb_feature_media_item_ct_node_presave($node) {
+  // Update the Media Item author from faculty reference field.
+  if ($node->type == 'media_item') {
+    $wrapper = entity_metadata_wrapper('node', $node);
+    if ($wrapper->field_person_fac_single_ref->value()) {
+      $node->uid = $wrapper->field_person_fac_single_ref->value()->uid;
+    }
+  }
+}
