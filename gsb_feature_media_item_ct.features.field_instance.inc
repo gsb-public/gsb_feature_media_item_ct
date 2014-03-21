@@ -279,7 +279,11 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
   // Exported field_instance: 'node-media_item-field_profile_visibility'
   $field_instances['node-media_item-field_profile_visibility'] = array(
     'bundle' => 'media_item',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
