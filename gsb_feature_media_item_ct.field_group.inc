@@ -21,7 +21,7 @@ function gsb_feature_media_item_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Publication Date',
-    'weight' => '5',
+    'weight' => '7',
     'children' => array(
       0 => 'field_month',
       1 => 'field_pub_date_day',
