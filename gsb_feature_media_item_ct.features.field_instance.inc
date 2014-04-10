@@ -67,6 +67,8 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
   // Exported field_instance: 'node-media_item-field_icon'
   $field_instances['node-media_item-field_icon'] = array(
     'bundle' => 'media_item',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Choose a file type. It will influence the icon displayed for users.',
@@ -90,7 +92,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_icon',
-    'label' => 'Icon',
+    'label' => 'Media format',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -158,6 +160,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
       ),
       'rel_remove' => 'default',
       'title' => 'none',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -543,8 +546,8 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
   t('Choose a file type. It will influence the icon displayed for users.');
   t('Day');
   t('Editorial summary');
-  t('Icon');
   t('Link to article');
+  t('Media format');
   t('Month');
   t('Profile Visibility');
   t('Related faculty member');
