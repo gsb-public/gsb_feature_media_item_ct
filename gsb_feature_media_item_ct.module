@@ -18,3 +18,21 @@ function gsb_feature_media_item_ct_node_presave($node) {
     }
   }
 }
+
+/**
+ * Implements hook_field_attach_form().
+ */
+function gsb_feature_media_item_ct_field_attach_form($entity_type, $entity, &$form, &$form_state, $langcode) {
+  // $langcode might be NULL.
+  $langcode = $langcode ?: LANGUAGE_NONE;
+
+  if ($entity_type == 'node' && $entity->type == 'media_item') {
+    // If a parent node was specified, pre-fill the author field.
+    if (!empty($entity->gsb_parent_node) && $parent_node = node_load($entity->gsb_parent_node)) {
+      $form['field_person_fac_single_ref'][$langcode][0]['target_id']['#default_value'] = $parent_node->title . ' (' . $parent_node->nid . ')';
+
+      // Prevent further fields from pre-filling with these values.
+      unset($entity->gsb_parent_node);
+    }
+  }
+}
