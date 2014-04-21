@@ -309,7 +309,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_profile_visibility',
-    'label' => 'Profile Visibility',
+    'label' => 'Display on Profile',
     'required' => 1,
     'settings' => array(
       'custom_add_another' => '',
@@ -549,7 +549,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
   t('Link to article');
   t('Media format');
   t('Month');
-  t('Profile Visibility');
+  t('Display on Profile');
   t('Related faculty member');
   t('Source Publication');
   t('Submit');
