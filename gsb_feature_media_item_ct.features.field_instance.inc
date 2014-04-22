@@ -184,11 +184,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'bundle' => 'media_item',
     'custom_add_another' => '',
     'custom_remove' => '',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -545,11 +541,11 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Choose a file type. It will influence the icon displayed for users.');
   t('Day');
+  t('Display on Profile');
   t('Editorial summary');
   t('Link to article');
   t('Media format');
   t('Month');
-  t('Display on Profile');
   t('Related faculty member');
   t('Source Publication');
   t('Submit');
