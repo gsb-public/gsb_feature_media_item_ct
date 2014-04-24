@@ -24,6 +24,8 @@ function gsb_feature_media_item_ct_node_presave($node) {
  */
 function gsb_feature_media_item_ct_field_attach_form($entity_type, $entity, &$form, &$form_state, $langcode) {
   // $langcode might be NULL.
+  global $user;
+
   $langcode = $langcode ?: LANGUAGE_NONE;
 
   if ($entity_type == 'node' && $entity->type == 'media_item') {
@@ -33,6 +35,11 @@ function gsb_feature_media_item_ct_field_attach_form($entity_type, $entity, &$fo
 
       // Prevent further fields from pre-filling with these values.
       unset($entity->gsb_parent_node);
+    }
+
+    // Hide profile visibility field for all except Administrator role.
+    if (!in_array('administrator', $user->roles)) {
+      $form['field_profile_visibility']['#access'] = FALSE;
     }
   }
 }
