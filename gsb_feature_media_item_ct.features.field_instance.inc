@@ -36,7 +36,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_editorial_summary',
-    'label' => 'Editorial summary',
+    'label' => 'Description',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -542,7 +542,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
   t('Choose a file type. It will influence the icon displayed for users.');
   t('Day');
   t('Display on Profile');
-  t('Editorial summary');
+  t('Description');
   t('Link to article');
   t('Media format');
   t('Month');
