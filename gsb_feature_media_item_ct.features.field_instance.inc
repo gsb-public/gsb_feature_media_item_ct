@@ -280,7 +280,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'bundle' => 'media_item',
     'default_value' => array(
       0 => array(
-        'value' => 1,
+        'value' => 0,
       ),
     ),
     'deleted' => 0,
