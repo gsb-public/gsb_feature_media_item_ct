@@ -31,6 +31,9 @@ function gsb_feature_media_item_ct_field_attach_form($entity_type, $entity, &$fo
     if (!empty($entity->gsb_parent_node) && $parent_node = node_load($entity->gsb_parent_node)) {
       $form['field_person_fac_single_ref'][$langcode][0]['target_id']['#default_value'] = $parent_node->title . ' (' . $parent_node->nid . ')';
 
+      // Set Profile Visibility field to Visible for pre-filled authors.
+      $form['field_profile_visibility'][$langcode]['#default_value'] = array(1);
+
       // Prevent further fields from pre-filling with these values.
       unset($entity->gsb_parent_node);
     }
