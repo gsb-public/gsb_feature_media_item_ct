@@ -1,7 +1,7 @@
 name = GSB Feature Media Item Content Type
 core = 7.x
 package = GSB
-version = 7.x-3.2
+version = 7.x-3.3
 project = gsb_feature_media_item_ct
 dependencies[] = ctools
 dependencies[] = date
