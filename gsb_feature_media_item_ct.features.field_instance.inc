@@ -71,7 +71,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Choose a file type. It will influence the icon displayed for users.',
+    'description' => 'If the media item is a written article (i.e., not a video or audio file), leave the selection as is.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -230,9 +230,11 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
   // Exported field_instance: 'node-media_item-field_person_fac_single_ref'
   $field_instances['node-media_item-field_person_fac_single_ref'] = array(
     'bundle' => 'media_item',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the first few characters of the faculty member\'s name to lookup and select the desired person.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -328,9 +330,11 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
   // Exported field_instance: 'node-media_item-field_pub_book_title'
   $field_instances['node-media_item-field_pub_book_title'] = array(
     'bundle' => 'media_item',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => '<strong>Example:</strong> The Wall Street Journal',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -540,10 +544,12 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Choose a file type. It will influence the icon displayed for users.');
+  t('<strong>Example:</strong> The Wall Street Journal');
   t('Day');
   t('Description');
   t('Display on Profile');
+  t('Enter the first few characters of the faculty member\'s name to lookup and select the desired person.');
+  t('If the media item is a written article (i.e., not a video or audio file), leave the selection as is.');
   t('Link to article');
   t('Media format');
   t('Month');
