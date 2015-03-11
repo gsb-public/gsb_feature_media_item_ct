@@ -142,6 +142,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'label' => 'Link to article',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,

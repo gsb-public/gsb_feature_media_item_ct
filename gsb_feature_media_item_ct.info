@@ -1,7 +1,7 @@
 name = GSB Feature Media Item Content Type
 core = 7.x
 package = GSB
-version = 7.x-3.3
+version = 7.x-5.0
 project = gsb_feature_media_item_ct
 dependencies[] = ctools
 dependencies[] = date
@@ -16,7 +16,7 @@ dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = submit_field
 dependencies[] = text
-datestamp = 1398189391
+datestamp = 1426108940
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2

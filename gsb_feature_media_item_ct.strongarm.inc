@@ -14,7 +14,7 @@ function gsb_feature_media_item_ct_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_media_item';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_media_item'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -244,7 +244,7 @@ function gsb_feature_media_item_ct_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'workbench_moderation_default_state_media_item';
-  $strongarm->value = 'published';
+  $strongarm->value = 'draft';
   $export['workbench_moderation_default_state_media_item'] = $strongarm;
 
   return $export;
