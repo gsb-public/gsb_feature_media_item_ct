@@ -10,7 +10,7 @@
 function gsb_feature_media_item_ct_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-media_item-field_editorial_summary'
+  // Exported field_instance: 'node-media_item-field_editorial_summary'.
   $field_instances['node-media_item-field_editorial_summary'] = array(
     'bundle' => 'media_item',
     'default_value' => NULL,
@@ -64,7 +64,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-media_item-field_icon'
+  // Exported field_instance: 'node-media_item-field_icon'.
   $field_instances['node-media_item-field_icon'] = array(
     'bundle' => 'media_item',
     'custom_add_another' => '',
@@ -111,7 +111,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-media_item-field_link_single'
+  // Exported field_instance: 'node-media_item-field_link_single'.
   $field_instances['node-media_item-field_link_single'] = array(
     'bundle' => 'media_item',
     'custom_add_another' => '',
@@ -181,7 +181,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-media_item-field_month'
+  // Exported field_instance: 'node-media_item-field_month'.
   $field_instances['node-media_item-field_month'] = array(
     'bundle' => 'media_item',
     'custom_add_another' => '',
@@ -228,7 +228,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-media_item-field_person_fac_single_ref'
+  // Exported field_instance: 'node-media_item-field_person_fac_single_ref'.
   $field_instances['node-media_item-field_person_fac_single_ref'] = array(
     'bundle' => 'media_item',
     'custom_add_another' => '',
@@ -241,6 +241,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'conditions' => array(),
           'link' => FALSE,
         ),
@@ -279,7 +280,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-media_item-field_profile_visibility'
+  // Exported field_instance: 'node-media_item-field_profile_visibility'.
   $field_instances['node-media_item-field_profile_visibility'] = array(
     'bundle' => 'media_item',
     'default_value' => array(
@@ -328,7 +329,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-media_item-field_pub_book_title'
+  // Exported field_instance: 'node-media_item-field_pub_book_title'.
   $field_instances['node-media_item-field_pub_book_title'] = array(
     'bundle' => 'media_item',
     'custom_add_another' => '',
@@ -382,7 +383,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-media_item-field_pub_date_day'
+  // Exported field_instance: 'node-media_item-field_pub_date_day'.
   $field_instances['node-media_item-field_pub_date_day'] = array(
     'bundle' => 'media_item',
     'custom_add_another' => '',
@@ -437,7 +438,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-media_item-field_submit'
+  // Exported field_instance: 'node-media_item-field_submit'.
   $field_instances['node-media_item-field_submit'] = array(
     'bundle' => 'media_item',
     'deleted' => 0,
@@ -479,7 +480,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-media_item-field_year_of_publication'
+  // Exported field_instance: 'node-media_item-field_year_of_publication'.
   $field_instances['node-media_item-field_year_of_publication'] = array(
     'bundle' => 'media_item',
     'custom_add_another' => '',
@@ -497,6 +498,7 @@ function gsb_feature_media_item_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
